@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .bd {
+    @apply border border-purple-400;
+  }
+  .bdd {
+    @apply border-2 border-green-400;
+  }
+}
