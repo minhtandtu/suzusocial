@@ -5,6 +5,7 @@ import { getNewProjects, getCategories } from "../../services";
 import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import { ItemGridWithPagin } from "../../components/common/ItemGridWithPagin";
+import { MainLayout } from "../../components/layout/MainLayout";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -74,7 +75,7 @@ const Projects = ({ projects, categories }) => {
     </div>
   );
 };
-
+Projects.Layout = MainLayout;
 export default Projects;
 export async function getStaticProps({ locale }) {
   const projects = await getNewProjects({ locale });

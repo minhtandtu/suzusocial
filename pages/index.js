@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-import { MainLayout } from "../components/layout/mainlayout";
+import { MainLayout } from "../components/layout/MainLayout";
 import { Hero } from "../components/home/Hero";
 import { OurServices } from "../components/home/OurServices";
 import { OurHightLightProjects } from "../components/home/OurHightLightProjects";
