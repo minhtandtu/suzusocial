@@ -1,8 +1,9 @@
 import React from "react";
 import { ProjectGrid } from "../common/ProjectGrid";
 import { useState } from "react";
-
+import useTrans from "../hooks/useTrans";
 export const OurHightLightProjects = ({ projects }) => {
+  const trans = useTrans();
   const [numOfCard, setNumOfCard] = useState(9);
 
   function handleOnClickMore() {
@@ -11,8 +12,9 @@ export const OurHightLightProjects = ({ projects }) => {
   return (
     <div className="bg-white py-16 bdd">
       <div className="bd w-[90%] mx-auto max-w-[78.75rem] ">
-        <div className="flex justify-center">
-          <p>OUR HIGHT LIGHT PROJECTS</p>
+        <div className="flex flex-col items-center justify-center pb-8">
+          <p className="text-4xl font-semibold">{trans.topservices.title}</p>
+          <p>{trans.topservices.excerpt}</p>
         </div>
         <ProjectGrid projects={projects} numOfCard={numOfCard} />
 

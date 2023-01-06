@@ -16,6 +16,7 @@ function Home({ projects }) {
   function changeLang(lang) {
     router.push("/", "/", { locale: lang });
   }
+
   return (
     <>
       <Head>

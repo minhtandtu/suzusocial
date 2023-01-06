@@ -6,18 +6,19 @@ import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import { ItemGridWithPagin } from "../../components/common/ItemGridWithPagin";
 import { MainLayout } from "../../components/layout/MainLayout";
+import useTrans from "../../components/hooks/useTrans";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Projects = ({ projects, categories }) => {
   const [numOfCard, setNumOfCard] = useState(6);
-
+  const trans = useTrans();
   return (
     <div className="bg-white ">
-      <div className="bg-purple-200  pt-40 ">
-        <MiniHero pageTitle="Dự án" />
-        <div className="flex flex-col items-center justify-center bd">
+      <div className="bg-purple-200 pt-40 ">
+        <MiniHero pageTitle={trans.projectpage.pagetitle} />
+        <div className="bd flex flex-col items-center justify-center">
           <Tab.Group>
             <Tab.List>
               <Tab as={Fragment}>
