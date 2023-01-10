@@ -5,8 +5,9 @@ export const Footer = () => {
   const trans = useTrans();
   return (
     <div className="bg-gray-50">
-      <div className="bd w-[90%] mx-auto max-w-[78.75rem] flex pt-24 pb-12 bd justify-between">
-        <div className="w-[25.25rem] bd h-96">
+      <div className="bd mx-auto flex w-[90%] max-w-[78.75rem] flex-col justify-between space-y-8 pr-8 pt-24  pb-12 md:flex-row md:space-y-0">
+        {/* Cot 1 */}
+        <div className="max-w-[24.313rem]">
           <Image
             src="/image/logosuzugroup.svg"
             alt="Picture of the author"
@@ -24,8 +25,11 @@ export const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="w-[11.875rem] bd h-96">
-          <h3 className="text-sm font-semibold text-gray-400">SuZu Group</h3>
+        {/* Cot 2 */}
+        <div className="">
+          <h3 className="whitespace-nowrap text-sm font-semibold text-gray-400">
+            SuZu Group
+          </h3>
           <ul role="list" className="mt-4 space-y-4">
             {trans.footer.navigation.suzugroup.map((item, index) => (
               <li key={index}>
@@ -39,9 +43,10 @@ export const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="w-[11.875rem] bd h-96 ">
-          <h3 className="text-sm font-semibold text-gray-400">
-            Liên kết nhanh
+        {/* Cot 3 */}
+        <div className="">
+          <h3 className="whitespace-nowrap text-sm font-semibold text-gray-400">
+            Suzu Studio
           </h3>
           <ul role="list" className="mt-4 space-y-4">
             {trans.footer.navigation.lienketnhanh.map((item, index) => (
@@ -56,9 +61,10 @@ export const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="w-[11.875rem] bd h-96">
-          <h3 className="text-sm font-semibold text-gray-400">
-            Đội ngũ của chúng tôi
+        {/* Cot 4 */}
+        <div className="">
+          <h3 className="whitespace-nowrap text-sm font-semibold text-gray-400">
+            Suzu Social
           </h3>
           <ul role="list" className="mt-4 space-y-4">
             {trans.footer.navigation.doingucuachungtoi.map((item, index) => (
@@ -74,8 +80,9 @@ export const Footer = () => {
           </ul>
           {/* LINK */}
         </div>
-        <div className="w-[11.875rem] bd h-96">
-          <h3 className="text-sm font-semibold text-gray-400">
+        {/* Cot 5 */}
+        <div className="">
+          <h3 className="whitespace-nowrap text-sm font-semibold text-gray-400">
             Liên kết với chúng tôi
           </h3>
           <ul role="list" className="mt-4 space-y-4">
@@ -93,7 +100,7 @@ export const Footer = () => {
           {/* LINK */}
         </div>
       </div>
-      <div className="h-[5.5rem] bg-purple-300 flex justify-center items-center">
+      <div className="flex h-[5.5rem] items-center justify-center bg-purple-300">
         <p>{trans.footer.copyright}</p>
       </div>
     </div>

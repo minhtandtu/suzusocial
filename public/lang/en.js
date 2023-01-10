@@ -24,13 +24,13 @@ export default {
   breadcrumbs: "home",
   footer: {
     contact: [
-      { title: "Email", content: "contact@vaecorp.vn", id: 1 },
-      { title: "Hotline", content: "0901756557", id: 2 },
       {
         title: "Address",
         content:
           "265/40 No Trang Long, P.11, Binh Thanh, Ho Chi Minh City, Vietnam",
       },
+      { title: "Hotline", content: "0901756557", id: 2 },
+      { title: "Email", content: "contact@vaecorp.vn", id: 1 },
     ],
 
     copyright: "© 2022 SuZu Group. All rights reserved.",

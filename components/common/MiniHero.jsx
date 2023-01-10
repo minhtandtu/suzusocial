@@ -8,9 +8,19 @@ export const MiniHero = (prop) => {
   console.log(pageTitle);
   const pathParts = pathname.split("/").filter((part) => part);
   return (
-    <div className="flex  flex-col items-center bg-purple-200 py-4">
-      <p className="bdd mb-5 text-6xl text-white">{pageTitle}</p>
-      <Breadcrumbs />
+    <div className="relative bg-purple-200">
+      <div className="hidden sm:block">
+        <img src="/image/bg_mini.png" className="h-96 object-cover"></img>
+      </div>
+      <div className="block sm:hidden">
+        <img src="/image/bg_mini_mobi.png" className="w-full"></img>
+      </div>
+      <div className="bdd absolute top-0  flex h-full w-full flex-col items-center justify-center">
+        <p className="mb-3 text-4xl font-bold text-white sm:mb-5 md:text-5xl">
+          {pageTitle}
+        </p>
+        <Breadcrumbs />
+      </div>
     </div>
   );
 };

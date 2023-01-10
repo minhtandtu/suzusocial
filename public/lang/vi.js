@@ -29,13 +29,13 @@ export default {
 
   footer: {
     contact: [
-      { title: "Email", content: "contact@vaecorp.vn", id: 1 },
-      { title: "Hotline", content: "0901756557", id: 2 },
       {
         title: "Địa Chỉ",
         content:
           "265/40 Nơ Trang Long, Phường 11, Quận Bình Thạnh, TP. Hồ Chí Minh, Việt Nam",
       },
+      { title: "Hotline", content: "0901756557", id: 2 },
+      { title: "Email", content: "contact@vaecorp.vn", id: 1 },
     ],
     copyright: "© 2022 SuZu Group. Đã đăng ký bản quyền.",
     navigation: {

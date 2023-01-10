@@ -10,8 +10,8 @@ export const OurHightLightProjects = ({ projects }) => {
     setNumOfCard(numOfCard + 3);
   }
   return (
-    <div className="bg-white py-16 bdd">
-      <div className="bd w-[90%] mx-auto max-w-[78.75rem] ">
+    <div className="bdd bg-white py-16">
+      <div className="bd mx-auto w-[90%] max-w-[78.75rem] ">
         <div className="flex flex-col items-center justify-center pb-8">
           <p className="text-4xl font-semibold">{trans.topservices.title}</p>
           <p>{trans.topservices.excerpt}</p>
@@ -21,7 +21,7 @@ export const OurHightLightProjects = ({ projects }) => {
         <div className="flex justify-center">
           <p
             onClick={handleOnClickMore}
-            className=" bg-red-400 rounded-md cursor-pointer px-4"
+            className="cursor-pointer rounded-md px-4"
           >
             Xem Them
           </p>
