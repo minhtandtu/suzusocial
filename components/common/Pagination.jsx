@@ -11,7 +11,7 @@ export const Pagination = (props) => {
     pagin.push(i);
   }
   return (
-    <div className="flex space-x-2 bd px-4">
+    <div className="flex space-x-2 px-4">
       <button
         disabled={currentPage === 0}
         onClick={() => changePage(currentPage - 1)}
@@ -25,7 +25,7 @@ export const Pagination = (props) => {
           key={index}
           onClick={() => changePage(index)}
           className={classNames(
-            "hover:bg-red-100 p-2",
+            "p-2 hover:bg-red-100",
             index === currentPage ? "font-bold" : ""
           )}
         >

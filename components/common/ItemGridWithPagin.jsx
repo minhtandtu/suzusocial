@@ -21,7 +21,7 @@ export const ItemGridWithPagin = ({ projects, defaultNumCard }) => {
   newPJ = newPJ.splice(start, defaultNumCard);
   return (
     <div className="flex flex-col items-center space-y-4">
-      <div className="grid grid-cols-3 gap-4 ">
+      <div className="grid gap-4 md:grid-cols-3">
         {newPJ.map((item, index) => (
           <div key={index} className="w-full  ">
             <ProjectCard project={item} />
