@@ -44,13 +44,15 @@ export const Header = () => {
           <Bars2Icon className="h-6 w-6 text-white" />
         </div>
         <div className="flex w-full items-center justify-between rounded-2xl rounded-bl-none bg-white/80 py-2 px-4 backdrop-blur-xl">
-          <Image
-            src="/image/logo.svg"
-            alt="Picture of the author"
-            width={70}
-            height={70}
-            className="h-auto w-auto"
-          />
+          <Link href="/">
+            <Image
+              src="/image/logo.svg"
+              alt="Picture of the author"
+              width={75}
+              height={44}
+              className="h-full"
+            />
+          </Link>
           <div className="hidden py-2 md:flex">
             {data.map((item) => (
               <Link

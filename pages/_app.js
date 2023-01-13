@@ -6,7 +6,7 @@ function App({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
-      <Script id="myscript" src="/script.js"></Script>
+      <Script id="myscript" src="/myscript.js"></Script>
     </Layout>
   );
 }

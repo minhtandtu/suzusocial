@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { MainLayout } from "../components/layout/MainLayout";
 import { Hero } from "../components/home/Hero";
@@ -8,7 +7,6 @@ import { OurHightLightProjects } from "../components/home/OurHightLightProjects"
 import { getNewProjects } from "../services";
 import useTrans from "../components/hooks/useTrans";
 import { useRouter } from "next/router";
-const inter = Inter({ subsets: ["latin"] });
 
 function Home({ projects }) {
   const trans = useTrans();

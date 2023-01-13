@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 export const FourShape = () => {
   return (
-    <div className="bdd flex">
+    <div className="flex">
       <div className="w-1/2 pr-2">
         {/* Rectangle */}
         <div className="relative">
-          <div className="bd aspect-[1/1.618] w-full max-w-[11.063rem] rounded-[3rem] bg-gradient-to-r from-primary to-secondary"></div>
-          <div className="bd absolute top-1 -left-1 aspect-[1/1.618] w-full max-w-[11.063rem] overflow-hidden rounded-[3rem] border  border-gray-100">
+          <div className="aspect-[1/1.618] w-full max-w-[11.063rem] rounded-[3rem] bg-gradient-to-r from-primary to-secondary"></div>
+          <div className="absolute top-1 -left-1 aspect-[1/1.618] w-full max-w-[11.063rem] overflow-hidden rounded-[3rem] border  border-gray-100">
             <Image
               src="/image/image.png"
               height={268}

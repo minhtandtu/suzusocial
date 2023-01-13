@@ -9,11 +9,9 @@ export const ProjectGrid = ({ projects, numOfCard }) => {
     newProjects = projects;
   }
   return (
-    <div className="bg-red-200 grid grid-cols-3 gap-4 ">
+    <div className="grid grid-cols-3 gap-4 ">
       {newProjects.map((item) => (
-        <div key={item.id} className="w-full bg-blue-300 ">
-          <ProjectCard project={item} />
-        </div>
+        <ProjectCard key={item.id} project={item} />
       ))}
     </div>
   );

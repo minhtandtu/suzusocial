@@ -100,3 +100,26 @@ export async function getNewProjects({ locale }) {
   const result = await request(GraphAPI, query, { locale });
   return result.projects;
 }
+
+export async function getMember({ locale }) {
+  const query = gql`
+    query MyMEMBER($locale: Locale!) {
+      members(locales: [$locale]) {
+        locale
+        name
+        position
+        team {
+          ... on Team {
+            id
+            name
+          }
+        }
+        image(locales: en) {
+          url
+        }
+      }
+    }
+  `;
+  const result = await request(GraphAPI, query, { locale });
+  return result.members;
+}

@@ -5,14 +5,15 @@ export const Footer = () => {
   const trans = useTrans();
   return (
     <div className="bg-gray-50">
-      <div className="bd mx-auto flex w-[90%] max-w-[78.75rem] flex-col justify-between space-y-8 pr-8 pt-24  pb-12 md:flex-row md:space-y-0">
+      <div className="mx-auto flex w-[90%] max-w-[78.75rem] flex-col justify-between space-y-8 pr-8 pt-24  pb-12 md:flex-row md:space-y-0">
         {/* Cot 1 */}
         <div className="max-w-[24.313rem]">
           <Image
             src="/image/logosuzugroup.svg"
-            alt="Picture of the author"
+            alt="Logo of Suzu group"
             width={88}
-            height={70}
+            height={44}
+            className="h-[44px] w-[88px] "
           />
           <div className="">
             {trans.footer.contact.map((item, index) => (

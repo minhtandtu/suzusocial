@@ -1,21 +1,35 @@
 import React from "react";
 import useTrans from "../hooks/useTrans";
 import { ArrowDownIcon } from "@heroicons/react/24/solid";
+import Script from "next/script";
+import { useEffect } from "react";
 
 export const Hero = () => {
-  const trans = useTrans();
+  // Text Circle
 
+  useEffect(() => {
+    const rotateText = document.querySelector(".text-circle");
+    rotateText.innerHTML = rotateText.innerHTML
+      .split("")
+      .map(
+        (char, i) =>
+          `<span style=" transform:rotate(${
+            i * 13
+          }deg)" key=${i}>${char}</span> `
+      )
+      .join("");
+  }, []);
+
+  const trans = useTrans();
   return (
-    <div className="bd relative ">
-      <div>
-        <img
-          src="/image/bg.png"
-          className="bdd h-full min-h-[718px] object-cover"
-        ></img>
-      </div>
+    <div className="relative ">
+      <img
+        src="/image/bg.png"
+        className="h-full min-h-[718px] object-cover"
+      ></img>
       <div className="absolute top-0 h-full w-full px-4">
         <div className="mx-auto flex h-full max-w-5xl flex-col items-center justify-center pt-20 text-center font-semibold text-white">
-          <p className="pb-6 text-4xl font-bold md:text-[3.25rem]">
+          <p className="pb-6 text-4xl font-bold md:text-[3.25rem] md:leading-relaxed">
             {trans.home.hero.bigtext}
           </p>
           <div className="max-w-[38.75rem]">

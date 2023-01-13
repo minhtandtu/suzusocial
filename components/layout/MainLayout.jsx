@@ -1,14 +1,17 @@
 import React from "react";
 import { Header } from "../common/Header";
 import { Footer } from "../common/Footer";
+import { Inter } from "@next/font/google";
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
 export const MainLayout = ({ children }) => {
   return (
-    <div className="bg-gray-300">
-      <div className="container mx-auto bg-red-300 shadow-2xl">
-        <Header />
-        {children}
-        <Footer />
-      </div>
+    <div
+      className={`container mx-auto shadow-2xl ${inter.variable} font-sans text-gray-700`}
+    >
+      <Header />
+      {children}
+      <Footer />
     </div>
   );
 };

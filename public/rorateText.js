@@ -1,4 +1,5 @@
 // Text Circle
+console.log("Rotate Text");
 let textArray = document
   .querySelector(".text-circle")
   .innerHTML.split("")
